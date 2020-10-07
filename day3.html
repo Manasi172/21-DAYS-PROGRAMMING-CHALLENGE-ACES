@@ -1,0 +1,49 @@
+<!DOCTYPE html >
+<html>
+    <title>Personal Info</title>
+    <style>
+        h2{
+            font-size: 50px;
+            text-align: center;
+            font-family: cursive;
+            color: crimson;
+        }
+        body{
+            text-align: center;
+            background-color:cornsilk;
+        }
+        #image{
+            border-radius: 50%;
+        }
+        .instruction{
+            font-size: 20px;
+            font-family: monospace;
+            color: darkorchid;
+        }
+    </style>
+    <body>
+        <h2>My Bio</h2>
+        <form>
+            <img id="image" src="https://3.bp.blogspot.com/-awcchP27iX4/VT_UiNcSzgI/AAAAAAAAF9g/kLTOjEnvBMg/w1200-h630-p-k-no-nu/About%2BMe%2BModel%2BMayhem.png" width="300px" height="150px"><br><br>
+            <a href="#end">Go to end of the page</a><br><br>
+            <input type="text" placeholder="Your Name" required>
+            <p class="instruction">Select Your Age Group</p>
+            <label><input type="radio" name="ageGroup" value="Less than 12" >Less than 12 years</label><br>
+            <input type="radio" name="ageGroup" value="12 - 17" >In between 12 to 17 years<br>
+            <input type="radio" name="ageGroup" value="18 - 24" >In between 18 to 24 years<br>
+            <input type="radio" name="ageGroup" value="25 - 40" >In between 25 to 40 years<br>
+            <input type="radio" name="ageGroup" value="Above 40" >Above 40<br>
+            <p class="instruction">What are your hobbies : </p>
+            <input type="checkbox" name="hobby" value="reading">Reading<br>
+            <input type="checkbox" name="hobby" value="singing">Singing<br>
+            <input type="checkbox" name="hobby" value="dancing">Dancing<br>
+            <input type="checkbox" name="hobby" value="drawinging">Drawing<br>
+            <input type="checkbox" name="hobby" value="Trekking">Trekking<br>
+            <input type="checkbox" name="hobby" value="Other">Other<br>
+            <p class="instruction">Goals: </p>
+            <input type="text" placeholder="Your Goal"><br><br>
+            <button type="submit">Submit the Response</button>
+        </form>
+        <p id="end">End of the page</p>
+    </body>
+</html>
