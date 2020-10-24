@@ -1,0 +1,33 @@
+<style>
+    .balls{
+      border-radius: 30%;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      margin-top: 50px;
+      animation-name: ball;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    #red {
+      background: rgb(64, 233, 233);
+      left: 27%;
+      animation-timing-function: linear;
+    }
+    #blue {
+      background: rgb(215, 43, 238);
+      left: 56%;
+      animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    }
+    @keyframes ball {
+      0% {
+        top: 0px;
+      }
+      100% {
+        top: 249px;
+      }
+    }
+  </style>
+  <div class="balls" id= "red"></div>
+  <div class="balls" id= "blue"></div>
+  
